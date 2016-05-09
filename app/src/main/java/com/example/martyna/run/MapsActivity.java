@@ -109,8 +109,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                 try {
                     URI website = new URI("https://maps.googleapis.com/maps/api/directions/json?origin=" + mMap.getMyLocation().getLatitude() + "%" + mMap.getMyLocation().getLongitude() + "&destination=" + point.latitude + "%" + point.longitude + "&key=AIzaSyDqqXN6o1-n9_FoboDGZxGM3sIdWDXv_Fs&mode=walking");
-                    String url = "https://maps.googleapis.com/maps/api/directions/json?origin=" + mMap.getMyLocation().getLatitude() + "%" + mMap.getMyLocation().getLongitude() + "&destination=" + point.latitude + "%" + point.longitude + "&key=AIzaSyDqqXN6o1-n9_FoboDGZxGM3sIdWDXv_Fs&mode=walking";
-                    AsyncTask<String, Void, JSONObject> task= new JSONAsyncTask().execute("https://maps.googleapis.com/maps/api/directions/json?origin=Toledo&destination=Madrid&region=es&key=AIzaSyDqqXN6o1-n9_FoboDGZxGM3sIdWDXv_Fs");
+                    String url = "https://maps.googleapis.com/maps/api/directions/json?origin=" + mMap.getMyLocation().getLatitude() + "%" + mMap.getMyLocation().getLongitude() + "&destination=" + point.latitude + "%" + point.longitude + "&key=AIzaSyDHrKDpJ8oW6oyzbMW4RV5L2JhpSmfqffA&mode=walking";
+                    AsyncTask<String, Void, JSONObject> task= new JSONAsyncTask().execute("https://maps.googleapis.com/maps/api/directions/json?origin=Toledo&destination=Madrid&region=es&key=AIzaSyDHrKDpJ8oW6oyzbMW4RV5L2JhpSmfqffA");
                     JSONObject json = null;
                     try {
                         json = task.get();
